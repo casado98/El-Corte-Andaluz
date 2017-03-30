@@ -1,0 +1,41 @@
+public class Lavadora extends Electrodomesticos {
+	private String carga;
+	private int velocidad;
+	private String tipo;
+	//constructores
+	
+	public Lavadora(String carga, int velocidad, String tipo) {
+        this.carga = carga;
+        this.velocidad = velocidad;
+        this.tipo = tipo;
+    }
+	//Accesores:getters y setters
+
+    public String getCarga() {
+        return carga;
+    }
+
+    public void setCarga(String carga) {
+        this.carga = carga;
+    }
+
+    public int getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    
+	
+	
+
+}
