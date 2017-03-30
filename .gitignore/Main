@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+	Electrodomesticos n1=new Electrodomesticos("delll","lavadora",2000,"F",1.10,45,170);
+		
+		n1.preciobruto();
+		n1.preciotrans();
+		n1.preciototal();
+		System.out.println(n1);
+		
+
+	}
+	public static void muestrapreciobruto(){
+		System.out.print("e+");
+	}
+}
+
+	
