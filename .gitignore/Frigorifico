@@ -1,0 +1,27 @@
+public class Frigorifico extends Electrodomesticos {
+	private int capacidad;
+	private int capcongelador;
+	
+	
+	 public Frigorifico(int capacidad, int capcongelador) {
+	        this.capacidad = capacidad;
+	        this.capcongelador = capcongelador;
+	    }
+
+	    public int getCapacidad() {
+	        return capacidad;
+	    }
+
+	    public void setCapacidad(int capacidad) {
+	        this.capacidad = capacidad;
+	    }
+
+	    public int getCapcongelador() {
+	        return capcongelador;
+	    }
+
+	    public void setCapcongelador(int capcongelador) {
+	        this.capcongelador = capcongelador;
+	    }
+
+}
