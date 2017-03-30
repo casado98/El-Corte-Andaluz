@@ -1,0 +1,154 @@
+public class Electrodomesticos  {
+	private String marca;
+	private String modelo;
+	private int preciobase;
+	private String consumo;
+	private double altura;
+	private double anchura;
+	private int peso;
+	private int preciobruto;
+	private int preciotrans;
+	private int pvp;
+	//constructor con parametros
+	public Electrodomesticos(String marca, String modelo, int preciobase, String consumo, double altura, double anchura, int peso) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.preciobase = preciobase;
+       this. consumo=consumo;
+        this.altura = altura;
+        this.anchura = anchura;
+        this.peso = peso;
+        
+    }
+	
+	//constructor sin parametros
+	public Electrodomesticos(){
+		
+	}
+	
+	//Accesores:gettersy setters
+	public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getPreciobase() {
+        return preciobase;
+    }
+
+    public void setPreciobase(int preciobase) {
+        this.preciobase = preciobase;
+    }
+
+    public String getConsumenergetico() {
+        return consumo;
+    }
+
+    public void setConsumenergetico(String consumenergetico) {
+        this.consumo = consumo;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public double getAnchura() {
+        return anchura;
+    }
+
+    public void setAnchura(double anchura) {
+        this.anchura = anchura;
+    }
+
+    public int getPeso() {
+        return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
+    //calcula el precio bruto segun la eficiencia
+    public int preciobruto(){
+    	if(consumo=="A"){
+    		preciobruto=preciobase+100;
+    	}elseif(consumo=="B");{
+    		preciobruto=preciobase+80;
+    	}if(consumo=="C"){
+    		preciobruto=preciobase+60;
+    	}elseif(consumo=="D");{
+    		preciobruto=preciobase+50;
+    	}if(consumo=="E"){
+    		preciobruto=preciobase+30;
+    	}elseif(consumo=="F");{
+    		preciobruto=preciobase+10;
+    	}
+    	return preciobruto;
+    
+    		
+   
+  	  		
+    }
+private void elseif(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+//calcula el precio de transporte segun su peso
+
+public int preciotrans() {
+	if(peso>0 & peso<=20){
+		preciotrans=10;
+	}elseif(peso>20 &peso<=50);{
+		preciotrans=50;
+	}if(peso>50 & peso<=80){
+		preciotrans=80;
+	}elseif(peso>80);{
+		preciotrans=100;
+	}
+	return preciotrans;
+	
+		
+		
+	}
+//calcula el precio total
+public int preciototal(){
+	pvp=preciotrans+preciobruto;
+	return pvp;
+	
+}
+
+//toString
+@java.lang.Override
+public java.lang.String toString() {
+    return "Electrodomesticos{" +
+            "marca='" + marca + '\'' +
+            ", modelo='" + modelo + '\'' +
+            ", preciobase=" + preciobase +
+            ", consumo='" + consumo + '\'' +
+            ", altura=" + altura +
+            ", anchura=" + anchura +
+            ", peso=" + peso +
+            ", preciobruto=" + preciobruto +
+            ", preciotrans=" + preciotrans +
+            ", pvp=" + pvp +
+            '}';
+}
+}
+    
+
+	
+
